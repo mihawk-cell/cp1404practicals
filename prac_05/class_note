@@ -1,0 +1,12 @@
+.items()
+.get()
+.split()
+.join()
+.pop()
+.add()
+.copy()
+.clear()
+.replace()
+list, tuples, dictionary, sets are 4 datatypes
+zip() need to tell the program what datatype wants to convert.
+EAFP = Easier to ask forgiveness then permission

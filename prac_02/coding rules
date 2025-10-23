@@ -1,0 +1,4 @@
+頂部第一行 → module docstring
+接著 → import
+再來 → 全域常數（如果有的話）
+最後 → 函數 / 類別

@@ -6,10 +6,8 @@ def main():
     # Output asterisks with the same length as the passwords
     print_asterisks(password)
 
-
 def print_asterisks(password):
     print("*" * len(password))
-
 
 def get_password():
     while True:
