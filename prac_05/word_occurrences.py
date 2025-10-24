@@ -4,20 +4,21 @@ Estimate: 20 minutes
 Actual:
 """
 
-# user input
+# 1. Read user input
 text = input("Enter a string: ")
 
-# text split to words
+# 2. Split text into words
 words = text.split()
 
-# Counting occurrences using a dictionary
+# 3. Count the number of times each word appears
 counts = {}
 for word in words:
     counts[word] = counts.get(word, 0) + 1
 
-# Find the longest word and use it to format the output
+# 4. Find the longest word for output alignment
 max_len = max(len(word) for word in counts)
 
-# Sort alphabetically and print
+# 5. Sort alphabetically and print
 for word in sorted(counts):
     print(f"{word:{max_len}} : {counts[word]}")
+
