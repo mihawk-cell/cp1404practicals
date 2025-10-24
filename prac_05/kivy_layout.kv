@@ -1,18 +1,20 @@
-# This is a Kv file.
-# It contains the declarations of the widgets that will be displayed.
-BoxLayout:
-    orientation: 'vertical'
+<MyRoot>:
+    orientation: "vertical"
+    padding: 10
+    spacing: 10
+
+    # The existing status_text area
     Label:
-        text: app.status_text
-        font_size: 60
-        size_hint_y: 0.2
-    BoxLayout:
-        orientation: 'horizontal'
-        Button:
-            text: "Up"
-            on_press: app.handle_press(1)
-        Button:
-            text: "Down"
-            on_press: app.handle_press(-1)
+        id: status_text
+        text: "Status: Ready"
+        size_hint_y: 0.2  # Takes up 20% of the vertical space
+
     BoxLayout:
         id: names_box
+        orientation: "vertical"
+        size_hint_y: 0.7  # Takes up 70% of the vertical space
+
+    # 新增 Label
+    Label:
+        text: "I did this :)"
+        size_hint_y: 0.1  # Takes up 10% of the vertical space
