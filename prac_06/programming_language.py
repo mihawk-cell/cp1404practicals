@@ -1,0 +1,18 @@
+class ProgrammingLangauge:
+
+    def __init__(self, name="", typing="", is_reflection=False, year=0):
+        """ Initialize the attribute """
+        self.name = name
+        self.typing = typing
+        self.is_reflection = is_reflection
+        self.year = year
+
+    def is_dynamic(self):
+        """Return True when typing s dynamic"""
+        return self.typing == "Dynamic"
+
+    def __str__(self):
+        return f"{self.name}, {self.typing}, Reflection={self.is_reflection}, First appeared in {self.year}"
+
+    def __repr__(self):
+        return f"{self.name}, {self.typing}, Reflection={self.is_reflection}, First appeared in {self.year}"
